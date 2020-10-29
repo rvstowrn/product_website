@@ -100,9 +100,6 @@
               ";
           }    
       }
-      else{
-          echo 'No Data';
-      }
       $conn->close();
     ?>
     
