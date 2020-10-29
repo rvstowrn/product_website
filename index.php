@@ -85,12 +85,16 @@
               echo "
                 <div class='flex_box'>
                   <div class='flex_img'>
-                    <img src='./uploads/".$product_row["imglink"]."'>
+                    <img src='./uploads/".$product_row["imglink"].".jpg'>
                   </div>
                   <div class='flex_text'>
                     <h3>".$product_row['name']."</h3>
                     ".$product_row["description"]."
-                    <a href='./order.php?q=".$product_row["productid"]."'>Book a slot</a>
+                    <button>
+                      <a href='./order.php?q=".$product_row["productid"]."'>
+                        Book a slot
+                      </a>
+                    </button>
                   </div>
                 </div>
               ";

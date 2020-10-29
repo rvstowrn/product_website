@@ -16,7 +16,6 @@
             <li><a href="index.php">Home</a></li>  
             <li><a href="contact.php">Contact</a></li>         
             <li><a href="about.php">About</a></li>
-            <li><a class="current" href="order.php">Book your slot Now</a></li>
             <li><a href="login.php">Login</a></li> 
           </ul>
         </div>
@@ -46,9 +45,9 @@
               </div>
           <div class="form-group">
             <label for="message">Address</label>
-            <textarea name="address" id="message"></textarea>
+            <textarea name="address" id="message" style='font-size:25px;padding:10px;'></textarea>
           </div>
-          <button type="submit" class="btn c">Order</button>
+          <button type="submit" id='btn' name='productid' class="btn c">Order</button>
           <p class="bottom-text">
             By clicking the Order button, you agree to our
             <a href="#">Terms & Conditions</a> and
@@ -80,6 +79,11 @@
     <footer id="main-footer">
       <p>LAND fast &copy; 2020, All Rights Reserved</p>
     </footer>
+    <script>
+      const res = window.location.href.split("=");
+      const value = res[res.length-1];
+      document.getElementById('btn').value=value;
+    </script>
     <script
       src="https://kit.fontawesome.com/8da90a7057.js"
       crossorigin="anonymous"

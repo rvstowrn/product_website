@@ -7,7 +7,7 @@
   $address = $_POST['address'];
   $productid = $_POST['productid'];
 
-  $sql = "INSERT INTO contact VALUES ('".$fname."', '".$lname."', '".$email."','".$phone."','".$address."','".$productid."')"; 
+  $sql = "INSERT INTO slot VALUES ('".$fname."', '".$lname."', '".$email."','".$phone."','".$address."','".$productid."')"; 
   if ($conn->query($sql) === TRUE) {
     header('location: ../');
   } 
