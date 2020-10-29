@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LAND fast | Welcome</title>
+    <title>LAND fast | Home</title>
     <meta
       name="description"
       content="Welcome to the best product landing page around."
