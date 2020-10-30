@@ -48,6 +48,19 @@
         width:100%;
         height:100%;
       }
+      .floating{
+        padding:10px 20px;
+        position:fixed;
+        right:20px;
+        bottom:20px;
+        background-color:#1E88E5;
+        border-radius:25px;
+      }
+      .floating>a{
+        color:white !important;
+        letter-spacing:4px;
+        z-index:100;
+      }
     </style>
   </head>
   <body>
@@ -102,9 +115,9 @@
       }
       $conn->close();
     ?>
-    
-    
-    
+    <div class="floating">
+      <a href='trivia.php'>TRIVIA</a>
+    </div>
 
     <div class="clr"></div>
     <footer id="main-footer">
