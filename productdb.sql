@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 29, 2020 at 09:01 PM
+-- Generation Time: Nov 03, 2020 at 07:26 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -33,6 +33,14 @@ CREATE TABLE `contact` (
   `message` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`name`, `email`, `message`) VALUES
+('Rishabh Verma', 'rd6767@srmist.edu.in', 'Nice Products'),
+('Sachin', 'sachin@gmail.com', 'Looking forward to the new arrivals');
+
 -- --------------------------------------------------------
 
 --
@@ -46,6 +54,13 @@ CREATE TABLE `employee` (
   `password` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `employee`
+--
+
+INSERT INTO `employee` (`name`, `email`, `username`, `password`) VALUES
+('Rishabh', 'rvstowrn@gmail.com', 'rvstowrn', 'Pass@6969');
+
 -- --------------------------------------------------------
 
 --
@@ -58,6 +73,13 @@ CREATE TABLE `product` (
   `imglink` varchar(1000) NOT NULL,
   `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`productid`, `name`, `imglink`, `description`) VALUES
+('16040020037242357205f9b20d37c125', 'Nike air pro', '16040020037242357205f9b20d37c125', 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ');
 
 -- --------------------------------------------------------
 
@@ -73,6 +95,32 @@ CREATE TABLE `slot` (
   `address` varchar(1000) NOT NULL,
   `product_id` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `slot`
+--
+
+INSERT INTO `slot` (`fname`, `lname`, `email`, `phone`, `address`, `product_id`) VALUES
+('Rishabh', 'Verma', 'rd6767@srmist.edu.in', '07903394122', 'MIG 54 Hanuman Nagar Kankarbagh', '16040020037242357205f9b20d37c125');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trivia`
+--
+
+CREATE TABLE `trivia` (
+  `q` varchar(1000) NOT NULL,
+  `a` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `trivia`
+--
+
+INSERT INTO `trivia` (`q`, `a`) VALUES
+('In which month was LAND first website created?', 'october'),
+('First Product mentioned on LAND Fast?', 'nike air pro');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
